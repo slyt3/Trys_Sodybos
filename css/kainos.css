@@ -1,0 +1,84 @@
+/* ===========================
+   KAINOS SECTION
+=========================== */
+.kainos {
+  background: var(--stone-100);
+}
+
+.kainos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kaina-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: var(--transition);
+}
+
+.kaina-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.kaina-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.kaina-nr {
+  width: 36px;
+  height: 36px;
+  background: var(--warm-600);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .95rem;
+  flex-shrink: 0;
+}
+
+.kaina-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kaina-table tr {
+  border-bottom: 1px solid var(--warm-200);
+}
+
+.kaina-table tr:last-child {
+  border-bottom: none;
+}
+
+.kaina-table td {
+  padding: .6rem 0;
+  font-size: .9rem;
+}
+
+.kaina-table td:last-child {
+  text-align: right;
+  color: var(--warm-700);
+}
+
+.kainos-notes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.kainos-notes p {
+  font-size: .9rem;
+  color: var(--text-muted);
+}

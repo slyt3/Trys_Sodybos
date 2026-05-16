@@ -1,0 +1,109 @@
+/* ===========================
+   RESPONSIVE – 900px
+=========================== */
+@media (max-width: 900px) {
+  .sodyba-card,
+  .sodyba-card.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .kontaktai-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kontaktai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===========================
+   RESPONSIVE – 700px
+=========================== */
+@media (max-width: 700px) {
+  /* Mobile nav */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--warm-900);
+    padding: 5rem 1.5rem 2rem;
+    gap: .25rem;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.1rem;
+    padding: .75rem 1rem;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .nav-burger {
+    display: flex;
+    position: relative;
+    z-index: 1001;
+  }
+
+  /* Intro strip stacks vertically */
+  .intro-strip {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .strip-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .strip-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Form */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Price block */
+  .sodyba-price {
+    flex-direction: column;
+  }
+}
+
+/* ===========================
+   RESPONSIVE – 480px
+=========================== */
+@media (max-width: 480px) {
+  .kontaktai-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gallery-thumbs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

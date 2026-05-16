@@ -1,0 +1,194 @@
+/* ===========================
+   VARIABLES
+=========================== */
+:root {
+  --warm-100: #fdf8f2;
+  --warm-200: #f5ece0;
+  --warm-300: #e8d5bc;
+  --warm-400: #d4b896;
+  --warm-500: #b8926a;
+  --warm-600: #9a7550;
+  --warm-700: #7a5c3a;
+  --warm-800: #5c4228;
+  --warm-900: #3d2b18;
+
+  --forest-800: #2d4a30;
+
+  --stone-100: #f8f7f5;
+
+  --white: #ffffff;
+  --text: #2e2a24;
+  --text-muted: #6b6258;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 4px 24px rgba(60, 40, 20, .10);
+  --shadow-lg: 0 12px 48px rgba(60, 40, 20, .15);
+  --transition: .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* ===========================
+   RESET
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--warm-100);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+h4 { font-size: 1.15rem; font-weight: 600; }
+h5 { font-size: .9rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+
+/* ===========================
+   LAYOUT UTILITIES
+=========================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-header h2 {
+  margin-top: .4rem;
+}
+
+.section-header.light h2,
+.section-header.light .section-pre {
+  color: var(--white);
+}
+
+.section-header.light .section-sub {
+  color: rgba(255, 255, 255, .65);
+}
+
+.section-pre {
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--warm-600);
+  margin-bottom: .5rem;
+}
+
+.section-sub {
+  font-size: .95rem;
+  color: var(--text-muted);
+  margin-top: .75rem;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.75rem;
+  border-radius: 50px;
+  font-size: .95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--warm-600);
+  color: var(--white);
+  border-color: var(--warm-600);
+}
+
+.btn-primary:hover {
+  background: var(--warm-700);
+  border-color: var(--warm-700);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(154, 117, 80, .35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, .6);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, .1);
+  border-color: var(--white);
+}
+
+.btn-fb {
+  background: transparent;
+  color: var(--warm-700);
+  border-color: var(--warm-400);
+  font-size: .9rem;
+}
+
+.btn-fb:hover {
+  background: var(--warm-200);
+  border-color: var(--warm-600);
+}
+
+.btn-sm {
+  padding: .55rem 1.25rem;
+  font-size: .88rem;
+  background: var(--warm-600);
+  color: var(--white);
+  border-color: var(--warm-600);
+}
+
+.btn-sm:hover {
+  background: var(--warm-700);
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+}

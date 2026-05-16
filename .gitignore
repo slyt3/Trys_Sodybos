@@ -1,0 +1,10 @@
+# Original PNGs (replaced by WebP – kept locally only)
+sodyba_1/*.png
+sodyba_2/*.png
+sodyba_3/*.png
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/

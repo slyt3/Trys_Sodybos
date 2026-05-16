@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trys Sodybos – Poilsis gamtoje tarp Kauno ir Vilniaus</title>
+  <meta name="description" content="Trys jaukios sodybos tarp Kauno ir Vilniaus. Pirtis, kubilas, jacuzzi, vandens telkiniai, miškas. Nuoma poilsiui ir šventėms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Modular stylesheets -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sodybos.css" />
+  <link rel="stylesheet" href="css/paslaugos.css" />
+  <link rel="stylesheet" href="css/kainos.css" />
+  <link rel="stylesheet" href="css/kontaktai.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- =====================
+       NAVIGATION
+  ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Trys Sodybos</a>
+      <button class="nav-burger" id="navBurger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sodybos">Sodybos</a></li>
+        <li><a href="#paslaugos">Paslaugos</a></li>
+        <li><a href="#kainos">Kainos</a></li>
+        <li><a href="#kontaktai">Kontaktai</a></li>
+        <li><a href="#uzklausos" class="nav-cta">Rezervuoti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =====================
+       HERO
+  ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('sodyba_1/1.webp')"></div>
+      <div class="hero-slide" style="background-image:url('sodyba_2/1.webp')"></div>
+      <div class="hero-slide" style="background-image:url('sodyba_3/1.webp')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Poilsis. Sventtes. Gamta.</p>
+      <h1>Trys sodybos<br><em>tarp Kauno ir Vilniaus</em></h1>
+      <p class="hero-sub">15-20 km nuo Kauno &bull; Misku apsupty &bull; Prie vandens &bull; Pirtis &amp; kubilas</p>
+      <div class="hero-btns">
+        <a href="#sodybos" class="btn btn-primary">Rinktis sodyba</a>
+        <a href="#uzklausos" class="btn btn-outline">Teiraujuosi</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="dot active" data-idx="0"></button>
+      <button class="dot" data-idx="1"></button>
+      <button class="dot" data-idx="2"></button>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- Highlights strip -->
+  <section class="intro-strip">
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>3 unikalios sodybos</span>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+      <span>1-5 km nuo greitkelio</span>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <span>Iki 40 svecciu</span>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l4-8 4 5 3-3 4 6"/></svg>
+      <span>Pirtis, kubilas, jacuzzi</span>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      <span>Nuo 50 EUR / para</span>
+    </div>
+  </section>
+
+  <!-- =====================
+       SODYBOS
+  ===================== -->
+  <section class="section sodybos" id="sodybos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-pre">Pasirinkite sodyba</p>
+        <h2>Trys skirtingos<br>patirtys gamtoje</h2>
+      </div>
+
+      <!-- SODYBA 1 -->
+      <div class="sodyba-card" id="sodyba1">
+        <div class="sodyba-gallery">
+          <div class="gallery-main">
+            <img src="sodyba_1/1.webp" alt="Cinamono sodyba" id="s1main" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-thumbs" id="s1thumbs">
+            <img src="sodyba_1/1.webp"  alt="" class="thumb active" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/2.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/3.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/4.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/5.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/6.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/7.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/8.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/9.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/10.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/11.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+            <img src="sodyba_1/12.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s1main',this,'s1thumbs')" />
+          </div>
+        </div>
+        <div class="sodyba-info">
+          <div class="sodyba-badge">Sodyba 1</div>
+          <h3>Cinamono Sodyba</h3>
+          <p class="sodyba-tagline">Nuosali misko sodyba su jacuzzi prie vandens telkinio</p>
+          <div class="sodyba-features">
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <span>Iki <strong>40</strong> svecciu salejje</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              <span><strong>30</strong> vietu nakvynei (3 miegamieji)</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Pirtis, jacuzzi, kubilas</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              <span>Misko apsupty, prie vandens telkinuko</span>
+            </div>
+          </div>
+          <div class="sodyba-price">
+            <div class="price-block">
+              <span class="price-label">Darbo dienomis</span>
+              <span class="price-val">nuo 100&euro;</span>
+            </div>
+            <div class="price-block highlight">
+              <span class="price-label">Savaitgaliais</span>
+              <span class="price-val">nuo 280&euro;</span>
+            </div>
+          </div>
+          <div class="sodyba-actions">
+            <a href="#uzklausos" class="btn btn-primary" onclick="preselectSodyba(1)">Rezervuoti</a>
+            <a href="https://www.facebook.com/cinamono/" target="_blank" rel="noopener" class="btn btn-fb">Facebook puslapis</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SODYBA 2 -->
+      <div class="sodyba-card reverse" id="sodyba2">
+        <div class="sodyba-gallery">
+          <div class="gallery-main">
+            <img src="sodyba_2/1.webp" alt="Pirtis sodyba" id="s2main" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-thumbs" id="s2thumbs">
+            <img src="sodyba_2/1.webp"  alt="" class="thumb active" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/2.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/3.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/4.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/5.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/6.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/7.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/8.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/9.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/10.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/11.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/12.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/13.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/14.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+            <img src="sodyba_2/15.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s2main',this,'s2thumbs')" />
+          </div>
+        </div>
+        <div class="sodyba-info">
+          <div class="sodyba-badge">Sodyba 2</div>
+          <h3>Pirtis Sodyba</h3>
+          <p class="sodyba-tagline">Pavesine prie vandens, kubilas ir ramybe salia misko</p>
+          <div class="sodyba-features">
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <span>Iki <strong>25</strong> svecciu salejje</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              <span><strong>20</strong> vietu nakvynei (3 miegamieji)</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Pirtis, kubilas</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              <span>Pavesine prie telkinio, salia misko</span>
+            </div>
+          </div>
+          <div class="sodyba-price">
+            <div class="price-block">
+              <span class="price-label">Darbo dienomis</span>
+              <span class="price-val">nuo 80&euro;</span>
+            </div>
+            <div class="price-block highlight">
+              <span class="price-label">Savaitgaliais</span>
+              <span class="price-val">nuo 230&euro;</span>
+            </div>
+          </div>
+          <div class="sodyba-actions">
+            <a href="#uzklausos" class="btn btn-primary" onclick="preselectSodyba(2)">Rezervuoti</a>
+            <a href="https://www.facebook.com/pirtis.sodyba" target="_blank" rel="noopener" class="btn btn-fb">Facebook puslapis</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SODYBA 3 -->
+      <div class="sodyba-card" id="sodyba3">
+        <div class="sodyba-gallery">
+          <div class="gallery-main">
+            <img src="sodyba_3/1.webp" alt="Rumvi Ila sodyba" id="s3main" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-thumbs" id="s3thumbs">
+            <img src="sodyba_3/1.webp"  alt="" class="thumb active" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/2.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/3.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/4.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/5.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/6.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/7.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/8.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/9.webp"  alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/10.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/11.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/12.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/13.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/14.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+            <img src="sodyba_3/15.webp" alt="" class="thumb" loading="lazy" decoding="async" onclick="changeMain('s3main',this,'s3thumbs')" />
+          </div>
+        </div>
+        <div class="sodyba-info">
+          <div class="sodyba-badge">Sodyba 3</div>
+          <h3>Rumvi Ila</h3>
+          <p class="sodyba-tagline">Intymi terasa virs zuvingo telkinio - ramiam pobuiui</p>
+          <div class="sodyba-features">
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              <span>Iki <strong>10</strong> asmenu (ramus pobuvis)</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              <span><strong>2</strong> miegamieji, 5+ dvigules lovos</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Pirtis, kubilas</span>
+            </div>
+            <div class="feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              <span>Terasa virs vandens, aptverta teritorija</span>
+            </div>
+          </div>
+          <div class="sodyba-price">
+            <div class="price-block">
+              <span class="price-label">Darbo dienomis</span>
+              <span class="price-val">nuo 50&euro;</span>
+            </div>
+            <div class="price-block highlight">
+              <span class="price-label">Savaitgaliais</span>
+              <span class="price-val">nuo 150&euro;</span>
+            </div>
+          </div>
+          <div class="sodyba-actions">
+            <a href="#uzklausos" class="btn btn-primary" onclick="preselectSodyba(3)">Rezervuoti</a>
+            <a href="https://www.facebook.com/RumviIla/" target="_blank" rel="noopener" class="btn btn-fb">Facebook puslapis</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       PASLAUGOS
+  ===================== -->
+  <section class="section paslaugos" id="paslaugos">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-pre">Kas iskaiciuota</p>
+        <h2>Paslaugos ir patogumai</h2>
+      </div>
+
+      <div class="paslaugos-grid">
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Pirtis</h4>
+          <p>Gaarine pirtis visose trijose sodybose. Iskurenimas uzsakomas is anksto.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 12a3 3 0 006 0"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+          </div>
+          <h4>Kubilas ir Jacuzzi</h4>
+          <p>Lauko kubilas ir/ar jacuzzi - iskurenimas uzsakomas is anksto. Sodyba 1 turi visas tris paslaugas.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </div>
+          <h4>Virtuve ir kepsinine</h4>
+          <p>Saldytuvas, mikrobange, virdulys, viryykle, grezinio vanduo. Lauko kepsinine / saslykinee.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-4 0v2M8 7V5a2 2 0 00-4 0v2"/></svg>
+          </div>
+          <h4>Miegas ir komfortas</h4>
+          <p>Patalyne uzsakoma is anksto. Dusas, WC viduje visose sodybose.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h4>Muzika ir sviesos</h4>
+          <p>Galinga garso sistema su mikrofonu ir sviesos efektais (uzsakoma), projektorius.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h4>Sportas ir zaidimai</h4>
+          <p>Tinklinio aikstele, krepsio lenta, automobiliu aikstele visose sodybose.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17v-2a4 4 0 014-4h10a4 4 0 014 4v2"/><path d="M16 11V7a4 4 0 00-8 0v4"/></svg>
+          </div>
+          <h4>Pavesines prie vandens</h4>
+          <p>Kiekviena sodyba turi pavesine salia vandens telkinio. Puiku vasaros vakarams.</p>
+        </div>
+        <div class="paslauga-card">
+          <div class="paslauga-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 14.91a16 16 0 006 6z"/></svg>
+          </div>
+          <h4>Baidares ir zvejyba</h4>
+          <p>Baidariu nuoma Strevos upe (siltuoju sezonu). Zvejyba izuvintame telkinyje.</p>
+        </div>
+      </div>
+
+      <div class="extra-services">
+        <h3>Papildomai uzsakomos paslaugos</h3>
+        <div class="extra-grid">
+          <span>Pirties iskurenimas</span>
+          <span>Kubilo iskurenimas</span>
+          <span>Jacuzzi paruosimas</span>
+          <span>Patalyne nakvynei</span>
+          <span>Hazanas</span>
+          <span>Zvejybos organizavimas</span>
+          <span>Garso sistema su mikrofonu</span>
+          <span>Sviesos efektai</span>
+          <span>Projektorius</span>
+          <span>Indai sventei</span>
+          <span>Pilnas stalo paruosimas</span>
+          <span>Maisto ruosimas</span>
+          <span>Baidares (vasara)</span>
+        </div>
+        <p class="extra-note">Galima nuomotis tik sale arba tik pirties / kubilo / jacuzzi paslaugas. Nuolaidos uzsakant daugiau paru bei nuolatiniams klientams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       KAINOS
+  ===================== -->
+  <section class="section kainos" id="kainos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-pre">Skaidri kainodara</p>
+        <h2>Kainos</h2>
+      </div>
+      <div class="kainos-grid">
+        <div class="kaina-card">
+          <div class="kaina-header">
+            <span class="kaina-nr">1</span>
+            <h4>Cinamono Sodyba</h4>
+          </div>
+          <table class="kaina-table">
+            <tr><td>Darbo dienomis</td><td><strong>nuo 100&euro;</strong></td></tr>
+            <tr><td>Savaitgaliais</td><td><strong>nuo 280&euro;</strong></td></tr>
+            <tr><td>Pirtis (iki 8 zm., 4 val.)</td><td><strong>50&euro;</strong></td></tr>
+            <tr><td>Kubilas (iki 8 zm., 5 val.)</td><td><strong>60&euro;</strong></td></tr>
+          </table>
+          <a href="#uzklausos" class="btn btn-sm" onclick="preselectSodyba(1)">Teiraujuosi</a>
+        </div>
+        <div class="kaina-card">
+          <div class="kaina-header">
+            <span class="kaina-nr">2</span>
+            <h4>Pirtis Sodyba</h4>
+          </div>
+          <table class="kaina-table">
+            <tr><td>Darbo dienomis</td><td><strong>nuo 80&euro;</strong></td></tr>
+            <tr><td>Savaitgaliais</td><td><strong>nuo 230&euro;</strong></td></tr>
+            <tr><td>Pirtis (iki 8 zm., 4 val.)</td><td><strong>50&euro;</strong></td></tr>
+            <tr><td>Kubilas (iki 8 zm., 5 val.)</td><td><strong>60&euro;</strong></td></tr>
+          </table>
+          <a href="#uzklausos" class="btn btn-sm" onclick="preselectSodyba(2)">Teiraujuosi</a>
+        </div>
+        <div class="kaina-card">
+          <div class="kaina-header">
+            <span class="kaina-nr">3</span>
+            <h4>Rumvi Ila</h4>
+          </div>
+          <table class="kaina-table">
+            <tr><td>Darbo dienomis</td><td><strong>nuo 50&euro;</strong></td></tr>
+            <tr><td>Savaitgaliais</td><td><strong>nuo 150&euro;</strong></td></tr>
+            <tr><td>Pirtis (iki 8 zm., 4 val.)</td><td><strong>50&euro;</strong></td></tr>
+            <tr><td>Kubilas (iki 8 zm., 5 val.)</td><td><strong>60&euro;</strong></td></tr>
+          </table>
+          <a href="#uzklausos" class="btn btn-sm" onclick="preselectSodyba(3)">Teiraujuosi</a>
+        </div>
+      </div>
+      <div class="kainos-notes">
+        <p>Rezervavimas patvirtinamas sumokejus 50% avansa per 1 diena po susitarimo.</p>
+        <p>Nemokamas atsaukimas likus 3 savaitems. Depozitas 100&euro;. Saskaitos imonems.</p>
+        <p>Atvykimas nuo 15:00, isvykimas iki 13:00. Galimas vellyvas atvykimas / isvykimas susitarus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       KONTAKTAI
+  ===================== -->
+  <section class="section kontaktai" id="kontaktai">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-pre">Susisiekite su mumis</p>
+        <h2>Kontaktai</h2>
+      </div>
+
+      <!-- Distance stats -->
+      <div class="kontaktai-stats">
+        <div class="kstat-item">
+          <span class="kstat-num">15&ndash;20</span>
+          <span class="kstat-label">km nuo Kauno</span>
+        </div>
+        <div class="kstat-item">
+          <span class="kstat-num">80</span>
+          <span class="kstat-label">km nuo Vilniaus</span>
+        </div>
+        <div class="kstat-item">
+          <span class="kstat-num">1&ndash;5</span>
+          <span class="kstat-label">km nuo greitkelio</span>
+        </div>
+        <div class="kstat-item">
+          <span class="kstat-num">25</span>
+          <span class="kstat-label">km Kauno oro uostas</span>
+        </div>
+      </div>
+
+      <!-- Two-column: contact info + sodyba quick links -->
+      <div class="kontaktai-grid">
+        <div class="kontaktai-main">
+          <h3>Bendrieji kontaktai</h3>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 14.91a16 16 0 006 6z"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Telefonas</span>
+              <span class="kontakt-value"><a href="tel:+37067373618">+370 673 73618</a></span>
+            </div>
+          </div>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Adresas</span>
+              <span class="kontakt-value">Piktavyzio k., Rumsiskiu sen., Kauno rajonas</span>
+            </div>
+          </div>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Darbo laikas</span>
+              <span class="kontakt-value">Visus metus &bull; Atvykimas nuo 15:00</span>
+            </div>
+          </div>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Kalbame</span>
+              <span class="kontakt-value">Lietuviska, angliskai, rusiskai</span>
+            </div>
+          </div>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Atvykimas</span>
+              <span class="kontakt-value">Galima atvykti ir traukiniu</span>
+            </div>
+          </div>
+
+          <div class="kontakt-item">
+            <div class="kontakt-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div class="kontakt-text">
+              <span class="kontakt-label">Artimiausia parduotuve</span>
+              <span class="kontakt-value">~2 km &bull; Kavine ~2.5 km</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sodyba quick links -->
+        <div class="kontaktai-sodybos">
+          <div class="kontakt-sodyba-card">
+            <div class="ks-info">
+              <h4>Cinamono Sodyba</h4>
+              <p>Iki 40 svecciu &bull; Pirtis, jacuzzi, kubilas &bull; nuo 100&euro;</p>
+            </div>
+            <a href="https://www.facebook.com/cinamono/" target="_blank" rel="noopener" class="btn btn-sm">Facebook</a>
+          </div>
+          <div class="kontakt-sodyba-card">
+            <div class="ks-info">
+              <h4>Pirtis Sodyba</h4>
+              <p>Iki 25 svecciu &bull; Pirtis, kubilas &bull; nuo 80&euro;</p>
+            </div>
+            <a href="https://www.facebook.com/pirtis.sodyba" target="_blank" rel="noopener" class="btn btn-sm">Facebook</a>
+          </div>
+          <div class="kontakt-sodyba-card">
+            <div class="ks-info">
+              <h4>Rumvi Ila</h4>
+              <p>Iki 10 asmenu &bull; Pirtis, kubilas &bull; nuo 50&euro;</p>
+            </div>
+            <a href="https://www.facebook.com/RumviIla/" target="_blank" rel="noopener" class="btn btn-sm">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rules and payment cards -->
+      <div class="kontaktai-rules">
+        <div class="rule-card">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Atvykimas ir isvykimas
+          </h4>
+          <ul>
+            <li>Atvykimas: nuo 15:00 iki 23:00</li>
+            <li>Vellyvas atvykimas iki 24:00 (susitarus)</li>
+            <li>Isvykimas: iki 13:00</li>
+            <li>Vellyvas isvykimas iki 18:00 (susitarus)</li>
+            <li>Min. uzsakymas: 1 para</li>
+          </ul>
+        </div>
+        <div class="rule-card">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Mokejimas ir rezervacija
+          </h4>
+          <ul>
+            <li>Avansas 50% per 1 diena po susitarimo</li>
+            <li>Banko pavedimas, gryni, Western Union, TransferGo</li>
+            <li>Nemokamas atsaukimas likus 3 savaitems</li>
+            <li>Veliau &ndash; avanso negrazinname</li>
+            <li>Depozitas 100&euro;</li>
+            <li>Israsome saskaitas imonems</li>
+          </ul>
+        </div>
+        <div class="rule-card">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Taisykles
+          </h4>
+          <ul>
+            <li>Patalpose neruukoma</li>
+            <li>Naminiai gyvunai &ndash; priimame (mokamai)</li>
+            <li>Vakarelijams nuomojama</li>
+            <li>Sutrumpinus laika, pinigai negrazinami</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       REZERVACIJOS FORMA
+  ===================== -->
+  <section class="section uzklausos" id="uzklausos">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-pre">Rasykite drasiai</p>
+        <h2>Teikti uzklausaa</h2>
+        <p class="section-sub">Jusu duomenys bus naudojami tik rezervacijos tikslais ir perduodami paslaugos teikejui.</p>
+      </div>
+      <form class="inquiry-form" id="inquiryForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vardas">Vardas, pavarde *</label>
+            <input type="text" id="vardas" name="vardas" required placeholder="Jonas Jonaitis" />
+          </div>
+          <div class="form-group">
+            <label for="tel">Telefono numeris *</label>
+            <input type="tel" id="tel" name="tel" required placeholder="+370 600 00000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sodyba">Sodyba *</label>
+            <select id="sodyba" name="sodyba" required>
+              <option value="">-- Pasirinkite --</option>
+              <option value="1">Sodyba 1 &ndash; Cinamono</option>
+              <option value="2">Sodyba 2 &ndash; Pirtis</option>
+              <option value="3">Sodyba 3 &ndash; Rumvi Ila</option>
+              <option value="all">Domina kelios sodybos</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sveciai">Svecciu skaicius</label>
+            <input type="number" id="sveciai" name="sveciai" min="1" max="40" placeholder="pvz. 12" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="atvykimas">Atvykimo data</label>
+            <input type="date" id="atvykimas" name="atvykimas" />
+          </div>
+          <div class="form-group">
+            <label for="isvykimas">Isvykimo data</label>
+            <input type="date" id="isvykimas" name="isvykimas" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="zinute">Pastabos / pageidavimai</label>
+          <textarea id="zinute" name="zinute" rows="4" placeholder="Pvz.: gimtadienis 15 zmoniu, reikia kubilo iskurenimo, muzikos sistemos..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary btn-lg">Siusti uzklausaa</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          Aciu! Jusu uzklausa isssiusta. Susisieksime per 24 val.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">Trys Sodybos</span>
+          <p>Trys jaukios sodybos tarp Kauno ir Vilniaus. Poilsiui, sventems ir nepamirstamams momentams gamtoje.</p>
+          <a href="tel:+37067373618" class="footer-phone">+370 673 73618</a>
+        </div>
+        <div class="footer-links-col">
+          <h5>Sodybos</h5>
+          <ul>
+            <li><a href="#sodyba1">Cinamono Sodyba</a></li>
+            <li><a href="#sodyba2">Pirtis Sodyba</a></li>
+            <li><a href="#sodyba3">Rumvi Ila</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Informacija</h5>
+          <ul>
+            <li><a href="#paslaugos">Paslaugos</a></li>
+            <li><a href="#kainos">Kainos</a></li>
+            <li><a href="#kontaktai">Kontaktai</a></li>
+            <li><a href="#uzklausos">Rezervacija</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Facebook</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/cinamono/" target="_blank" rel="noopener">Cinamono Sodyba</a></li>
+            <li><a href="https://www.facebook.com/pirtis.sodyba" target="_blank" rel="noopener">Pirtis Sodyba</a></li>
+            <li><a href="https://www.facebook.com/RumviIla/" target="_blank" rel="noopener">Rumvi Ila</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Piktavyzio k., Rumsiskiu sen., Kauno rajonas &bull; Dirbame visus metus</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modular scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+</html>
